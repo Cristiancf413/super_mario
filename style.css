@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
+    display: flex;  
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/cover.jpeg);
+  }
+
+@font-face {
+    font-family: 'mario';
+    src: url(font/RetroMario-Regular.otf);
+}
+
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+@keyframes mianimacion {
+    0% {background: #aaa;left: 0;top: 0px;}
+    25% {background: yellowgreen;left: 300px;top: 0px;}
+    50% {background: yellow;left: 300px;top: 300px;}
+    75% {background: papayawhip;left: 0px;top: 0px;}
+    100% {background: peru;left: 0px;top: 0px;}
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    animation-name: mario;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mario {
+    0% {background: transparent;left: 0;top: 0px;}
+    25% {background: transparent;left: 300px;top: 0px;}
+    50% {background: transparent;left: 300px;top: 300px;}
+    75% {background: transparent;left: 0px;top: 0px;}
+    100% {background: transparent;left: 0px;top: 0px;}
+}
+
+.h1{
+    font-family: 'mario';
+    position: relative;
+}
